@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about vynxidn</title>
+    <style>
+        /* --- RESET & GLOBAL STYLES --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding-bottom: 50px;
+        }
+
+        /* --- BAGIAN ATAS --- */
+        .box-tengah {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 140px;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* --- LINE FLEXBOX MERAH FULL --- */
+        .flex-line-container {
+            display: flex;
+            width: 100%; /* Memastikan kontainer mengambil lebar penuh layar */
+            padding: 10px 0;
+            margin: 20px 0;
+        }
+
+        .red-line {
+            width: 100%;
+            height: 2px; /* Ketebalan garis merah */
+            background-color: rgb(255, 0, 0); /* Warna merah penuh */
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Efek glow/cahaya merah */
+        }
+
+        /* --- BAGIAN BAWAH (KOTAK SOSMED) --- */
+        .section-title {
+            text-align: center;
+            color: rgb(255, 0, 0);
+            text-transform: uppercase;
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .social-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 12px 10px;
+            width: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .card:hover {
+            border-color: rgb(255, 0, 0);
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+        }
+
+        .card h3 {
+            margin: 0;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+
+        .card p {
+            margin: 0;
+            color: #8b949e;
+            font-size: 10px;
+            word-break: break-word;
+            text-align: center;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin-top: 4px;
+            padding: 5px 10px;
+            background-color: rgb(255, 0, 0);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-size: 9px;
+        }
+
+        .btn-link:hover {
+            background-color: #cc0000;
+        }
+
+        /* --- RESPONSIVE MOBILE --- */
+        @media (max-width: 600px) {
+            .box-tengah p {
+                font-size: 16px !important;
+            }
+
+            .social-container {
+                gap: 8px;
+            }
+
+            .card {
+                width: 30%;
+                min-width: 95px;
+                padding: 10px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= BAGIAN ATAS ================= -->
+    <div class="box-tengah">
+        <h1 style="color: rgb(255, 0, 0);">ABOUT ME</h1>
+        <p style="font-size: 22px;">This is the information that was actually published</p>
+    </div>
+
+    <div class="box-tengah">
+        <p style="text-transform: uppercase; white-space: pre-line; color: rgb(255, 0, 0); font-size: 18px;">
+            <strong>my name is vynxidn,
+            i am a student from indonesia,
+            i am 21 years old in 2026, 
+            i like to learn learn learn
+            </strong>
+        </p>
+    </div>
+
+    <!-- ================= FLEXBOX LINE MERAH FULL ================= -->
+    <div class="flex-line-container">
+        <div class="red-line"></div>
+    </div>
+
+    <!-- ================= BAGIAN BAWAH (SOCIAL MEDIA) ================= -->
+    <h2 class="section-title">Connect With Me</h2>
+
+    <div class="social-container">
+
+        <!-- GitHub -->
+        <div class="card">
+            <h3>GitHub</h3>
+            <p>@vynxidn</p>
+            <a href="https://github.com/vynnxidn" target="_blank" class="btn-link">Visit</a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="card">
+            <h3>Instagram</h3>
+            <p>@vynxidn</p>
+            <a href="https://instagram.com/_000.vynxidn.000_" target="_blank" class="btn-link">Follow</a>
+        </div>
+
+        <!-- LinkedIn -->
+        
+
+        
+
+        <!-- Telegram -->
+        <div class="card">
+            <h3>Telegram</h3>
+            <p>@vynxidn</p>
+            <a href="https://t.me/upup666666666" target="_blank" class="btn-link">Message</a>
+        </div>
+
+        <!-- Discord -->
+        
+
+    </div>
+
+</body>
+</html>
